@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Broke Street Bets research dashboard: Bayesian causality networks, MS-GARCH volatility regimes, matched wealth comparisons and a complete parameter reference.">
+  <title>Broke Street Bets · Research Observatory</title>
+  <script>try{document.documentElement.dataset.theme=localStorage.getItem('bsb-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){}</script>
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/style.css?v=7feb8417ab5e">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to research workspace</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="?mode=msgarch" aria-label="Broke Street Bets home"><img src="assets/mark.svg" width="40" height="40" alt=""><span>BROKE STREET BETS<small>Research Observatory</small></span></a>
+      <div class="sidebar-label">THE WORKSPACE</div>
+      <nav class="primary-nav" aria-label="Research modes">
+        <button data-mode="msgarch" class="nav-item active"><span class="nav-symbol" data-icon="activity"></span><span>MS-GARCH<small>Volatility & market regimes</small></span><span class="nav-arrow">↗</span></button>
+        <button data-mode="network" class="nav-item"><span class="nav-symbol" data-icon="network"></span><span>Causality Nets<small>Directional relationships</small></span><span class="nav-arrow">↗</span></button>
+      </nav>
+      <div class="sidebar-rule"></div>
+      <div class="sidebar-label">RESEARCH RESOURCES</div>
+      <nav class="resource-nav" aria-label="Research resources">
+        <button data-action="parameters"><span data-icon="sliders"></span> Parameters & methods</button>
+        <a href="assets/documents/251026_study.pdf" target="_blank" rel="noopener"><span data-icon="file"></span> Faculty presentation <span class="tiny">↗</span></a>
+        <button data-action="downloads"><span data-icon="download"></span> Data & downloads</button>
+        <button data-action="about"><span data-icon="people"></span> About the study</button>
+      </nav>
+      <div class="study-note"><span class="status-dot"></span> STUDY SNAPSHOT<p>80 hubs. 500 equities.<br>Three analytical horizons.</p><small>Data through 23 October 2026</small></div>
+      <div class="sidebar-bottom"><div class="team-avatars" aria-hidden="true"><span>KS</span><span>MS</span><span>AJ</span><span>SG</span><span>SP</span></div><strong>Broke Street Bets</strong><small>Mentor · Prof. TV Ramanathan</small></div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="topbar-left"><button class="icon-btn mobile-menu" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false" data-icon="menu"></button><span class="breadcrumb">Research <span>/</span> <strong id="crumbMode">MS-GARCH</strong></span></div>
+        <div class="topbar-right"><span class="snapshot-pill"><span class="status-dot"></span> Exploratory study</span><button class="icon-btn" id="themeToggle" aria-label="Switch to dark mode" title="Switch theme"></button><button class="button button-subtle" id="shareView"><span data-icon="link"></span><span class="hide-small">Copy view</span></button></div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="loading-screen"><span class="loader"></span><h1>Connecting the research.</h1><p>Loading the study snapshot…</p></div>
+      </main>
+      <section id="parameters" class="reference-section" aria-label="Parameters and methodology"></section>
+      <section id="downloads" class="reference-section" aria-label="Study downloads"></section>
+      <footer id="about" class="site-footer"></footer>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modal" class="modal" hidden></div>
+  <script type="module" src="assets/app.js?v=7feb8417ab5e"></script>
+</body>
+</html>
